@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = 'JSON-like and unicodify descriptions of Objective-C collection objects'
   s.homepage     = 'https://github.com/xareelee/ObjCJSONLikeDescription'
   s.authors      = { 'Kang-Yu Xaree Lee' => 'xareelee@gmail.com' }
-  s.source       = { :git => "https://github.com/xareelee/ObjCJSONLikeDescription.git", :tag => s.version.to_s, :submodules =>  true }
+  s.source       = { :git => "https://github.com/cczallen/ObjCJSONLikeDescription.git", :tag => s.version.to_s, :submodules =>  true }
   
   s.requires_arc = true  
 
