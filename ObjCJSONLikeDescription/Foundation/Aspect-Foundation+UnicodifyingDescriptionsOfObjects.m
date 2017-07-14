@@ -120,6 +120,19 @@ AspectPatch(-, NSString *, descriptionWithLocale:(id)locale indent:(NSUInteger)l
 
 // -----------------------------------------------------------------------------
 
+#define AtAspectOfClass NSMutableArray
+@classPatchField(NSMutableArray)
+
+AspectPatch(-, NSString *, description)
+{
+    return xl_JSON_array_description(self, [NSLocale systemLocale], 0);
+}
+
+@end
+#undef AtAspectOfClass
+
+// -----------------------------------------------------------------------------
+
 #define AtAspectOfClass NSOrderedSet
 @classPatchField(NSOrderedSet)
 
